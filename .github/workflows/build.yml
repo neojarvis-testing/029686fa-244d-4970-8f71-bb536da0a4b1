@@ -23,9 +23,10 @@ jobs:
           java-version: 11
       - name: Build and analyze
         env:
-          GITHUB_TOKEN: e62c84adbcfda79e46a9c096fbf892c15140994b
+          GITHUB_TOKEN: 985632
           SONAR_TOKEN: e62c84adbcfda79e46a9c096fbf892c15140994b
         run: >-
           mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
           -Dsonar.projectKey=neojarvis-testing_029686fa-244d-4970-8f71-bb536da0a4b1
           -Dsonar.login=e62c84adbcfda79e46a9c096fbf892c15140994b
+          -Dsonar.branch.target=main
