@@ -15,14 +15,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          fetch-depth: 10
       - name: Set up JDK 11
         uses: actions/setup-java@v1
         with:
           java-version: 11
       - name: Build and analyze
         env:
-          GITHUB_TOKEN: 029686fa-244d-4970-8f71-bb536da0a4b1
+          GITHUB_TOKEN: e62c84adbcfda79e46a9c096fbf892c15140994b
           SONAR_TOKEN: e62c84adbcfda79e46a9c096fbf892c15140994b
         run: >-
           mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
