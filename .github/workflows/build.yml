@@ -2,8 +2,7 @@ name: Build
 'on':
   push:
     branches:
-      - main
-      - lenient_check_1
+      - '*'
   pull_request:
     types:
       - opened
