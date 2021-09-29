@@ -9,7 +9,8 @@
         <maven.compiler.target>8</maven.compiler.target>
         <sonar.organization>neojarvis-testing</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.sources>.</sonar.sources>
+        <sonar.sources>reactapp/src</sonar.sources>
+        <sonar.tests>react/tests</sonar.tests>
     </properties>
     <dependencies>
         <dependency>
